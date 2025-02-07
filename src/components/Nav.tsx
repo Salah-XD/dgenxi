@@ -11,7 +11,7 @@ function Nav() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-8">
             
-            <div className="hidden md:flex space-x-6">
+            <div className="hidden md:flex space-x-8">
               <a href="#" className="text-purple-600 hover:text-purple-600">Home</a>
               <a href="#" className="text-gray-600 hover:text-purple-600">About Us</a>
               <a href="#" className="text-gray-600 hover:text-purple-600">Let's talk</a>
@@ -23,7 +23,7 @@ function Nav() {
           
           {/* Mobile Menu Button */}
           <div className="flex items-center space-x-4">
-            <button className="bg-purple-600 text-white pl-4 px-[6px] py-[6px] rounded-full flex items-center space-x-3 hover:bg-purple-700 transition-colors">
+            <button className="bg-purple-600 text-white pl- px-[6px] py-[6px] rounded-full flex items-center space-x-3 hover:bg-purple-700 transition-colors">
               <span>Portfolio</span>
               <FaArrowRight className="w-5 h-5 p-1" color='#9333ea' style={{background:'#fff',borderRadius:"50%"}}/>
             </button>
