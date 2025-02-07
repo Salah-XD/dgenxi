@@ -1,13 +1,13 @@
 import { ArrowRight } from 'lucide-react';
-
+import { FaCheckCircle } from "react-icons/fa";
 function Hero() {
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white flex flex-col items-center">
       
 
       {/* Hero Section */}
-      <main className="px-4 py-16 md:py-24 lg:py-32 md:px-8 lg:px-16">
+      <main className="px-4 pt-[12rem] md:py-24 lg:py-32 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto">
           <div className="text-center space-y-8">
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
@@ -19,15 +19,15 @@ function Hero() {
             {/* Features */}
             <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-12">
               <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 rounded-full bg-purple-600"></div>
+              <FaCheckCircle color='#9333ea'/>
                 <span className="text-gray-700">Creativity on Autopilot</span>
               </div>
               <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 rounded-full bg-purple-600"></div>
+              <FaCheckCircle color='#9333ea'/>
                 <span className="text-gray-700">Powered by AI</span>
               </div>
               <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 rounded-full bg-purple-600"></div>
+              <FaCheckCircle color='#9333ea'/>
                 <span className="text-gray-700">Driven by Humans</span>
               </div>
             </div>
