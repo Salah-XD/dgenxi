@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
+import { FaArrowRight } from "react-icons/fa";
 
 function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,21 +10,22 @@ function Nav() {
       <nav className="px-4 py-4 md:px-8 lg:px-16 relative">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-8">
-            <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-violet-800">
-              dgenxi
-            </h1>
+            
             <div className="hidden md:flex space-x-6">
-              <a href="#" className="text-gray-600 hover:text-purple-600">Home</a>
+              <a href="#" className="text-purple-600 hover:text-purple-600">Home</a>
               <a href="#" className="text-gray-600 hover:text-purple-600">About Us</a>
               <a href="#" className="text-gray-600 hover:text-purple-600">Let's talk</a>
             </div>
           </div>
+          <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-violet-800">
+              aigenxi
+            </h1>
           
           {/* Mobile Menu Button */}
           <div className="flex items-center space-x-4">
-            <button className="bg-purple-600 text-white px-6 py-2 rounded-full flex items-center space-x-2 hover:bg-purple-700 transition-colors">
+            <button className="bg-purple-600 text-white pl-4 px-[6px] py-[6px] rounded-full flex items-center space-x-3 hover:bg-purple-700 transition-colors">
               <span>Portfolio</span>
-              <ArrowRight className="w-4 h-4" />
+              <FaArrowRight className="w-5 h-5 p-1" color='#9333ea' style={{background:'#fff',borderRadius:"50%"}}/>
             </button>
             <button 
               onClick={() => setIsMenuOpen(!isMenuOpen)}
