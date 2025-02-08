@@ -5,14 +5,13 @@ import AboutUs from "./components/AboutUs";
 import Globe2 from "./components/globe";
 import PricingComponent from "./components/Pricing";
 function App() {
-
-  return (  
+  return (
     <div className=" bg-white">
       <Nav />
       <Hero />
-      <AboutUs/>
-      <Globe2/>
-      <PricingComponent/>
+      <AboutUs />
+      <Globe2 />
+      <PricingComponent />
     </div>
   );
 }
