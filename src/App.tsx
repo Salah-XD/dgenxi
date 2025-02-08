@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import AboutUs from "./components/AboutUs";
 import Globe2 from "./components/globe";
+import PricingComponent from "./components/Pricing";
 function App() {
 
   return (  
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <AboutUs/>
       <Globe2/>
+      <PricingComponent/>
     </div>
   );
 }
