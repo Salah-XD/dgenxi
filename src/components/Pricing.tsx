@@ -118,6 +118,11 @@ const PricingComponent = () => {
           unde odio praesentium, nihil doloribus optio voluptatem, tenetur quod,
           eius libero.
         </div>
+        <div>
+          <img src="src\assets\Amazon_logo 4.png" alt="amazon"/>
+           <img src="src/assets/Group.png" alt="" />
+          <img src="src\assets\image 1.png" alt="tfc" />
+        </div>
       </div>
 
       {/* contact */}

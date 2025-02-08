@@ -1,5 +1,6 @@
 import React from "react";
 import Service from "./Service";
+import { PiStarFourFill } from "react-icons/pi";
 
 function AboutUs() {
   return (
@@ -37,7 +38,7 @@ function AboutUs() {
           <div className="grid grid-cols-2 gap-4">
             {/* Card 1 - Large */}
             <div
-              className="col-span-2 rounded-2xl p-6 h-64 relative overflow-hidden group"
+              className="col-span-2 rounded-2xl p-6 h-64 relative overflow-hidden group flex flex-col justify-center items-center"
               style={{
                 backgroundImage:
                   'url("https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80")',
@@ -46,7 +47,7 @@ function AboutUs() {
               }}
             >
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors"></div>
-              <div className="relative z-10">
+              <div className="relative z-10 ">
                 <div className="text-4xl font-bold text-purple-300 ">140+</div>
                 <div className="text-sm text-purple-100 " >
                   Satisfied Deliveries
@@ -56,7 +57,7 @@ function AboutUs() {
 
             {/* Card 2 - Small */}
             <div
-              className="rounded-2xl p-6 h-40 relative overflow-hidden group"
+              className="rounded-2xl p-6 h-40 relative overflow-hidden group flex flex-col justify-center items-center"
               style={{
                 backgroundImage:
                   'url("https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80")',
@@ -75,7 +76,7 @@ function AboutUs() {
 
             {/* Card 3 - Small */}
             <div
-              className="rounded-2xl p-6 h-40 relative overflow-hidden group"
+              className="rounded-2xl p-6 h-40 relative overflow-hidden group flex flex-col justify-center items-center"
               style={{
                 backgroundImage:
                   'url("https://images.unsplash.com/photo-1676299081847-824916de030a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80")',
@@ -95,9 +96,10 @@ function AboutUs() {
         {/* AI Section */}
         <div className="mt-20 text-center">
           <h3 className="text-2xl font-bold mb-8 flex items-center justify-center gap-2">
-            <span className="w-6 h-0.5 bg-purple-300"></span>
+            <span className=" bg-purple-300"></span>
+            <PiStarFourFill/>
             Accelerated by AI
-            <span className="w-6 h-0.5 bg-purple-300"></span>
+            <span className=" bg-purple-300"></span>
           </h3>
 
           <p className="max-w-3xl mx-auto text-gray-200 mb-12">
@@ -122,9 +124,9 @@ function AboutUs() {
             ].map((service, index) => (
               <div
                 key={index}
-                className="bg-white/10 backdrop-blur px-6 py-2 rounded-full text-sm hover:bg-white/20 transition-colors cursor-pointer"
-              >
-                {index === 0 || index === 3 || index === 6 ? "+ " : ""}
+                className="bg-white/10 backdrop-blur px-6 py-2 rounded-full text-sm hover:bg-white/20 transition-colors cursor-pointer flex gap-2"
+              ><PiStarFourFill/>
+                {index === 0 || index === 3 || index === 6 ? "" : ""}
                 {service}
               </div>
             ))}
