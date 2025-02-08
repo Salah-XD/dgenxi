@@ -8,7 +8,7 @@ function AboutUs() {
       <div className="absolute bottom-20 left-10 w-24 h-24 bg-yellow-400 rounded-full blur-lg opacity-60"></div>
 
       <div className="max-w-7xl mx-auto relative">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+        <h2 className="text-4xl md:text-5xl font-[10] mb-12 text-center">
           About Us
         </h2>
 
@@ -16,14 +16,15 @@ function AboutUs() {
           {/* Left Column */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-3xl font-bold mb-2">
-                One <span className="text-purple-300">Algenxi</span>
+              <h3 className="text-3xl font-thin mb-2">
+                One <span className="text-4xl font-medium">Aigenxi</span>
               </h3>
-              <p className="text-lg text-purple-100">Many Solutions</p>
+              <p className="text-lg  text-purple-100">Many Solutions</p>
             </div>
+            <hr className = "w-[400px]" />
 
             <p className="text-gray-200 leading-relaxed">
-              dGenxi is a next-generation production agency revolutionizing
+              AiGenxi is a next-generation production agency revolutionizing
               content creation with AI-powered intelligence and human expertise.
               We specialize in streamlining the pre-production and
               post-production workflow, delivering visually compelling and
@@ -45,8 +46,8 @@ function AboutUs() {
             >
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors"></div>
               <div className="relative z-10">
-                <div className="text-4xl font-bold text-purple-300">140+</div>
-                <div className="text-sm text-purple-100">
+                <div className="text-4xl font-bold text-purple-300 ">140+</div>
+                <div className="text-sm text-purple-100 " >
                   Satisfied Deliveries
                 </div>
               </div>
