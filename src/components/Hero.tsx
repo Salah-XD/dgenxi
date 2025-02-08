@@ -1,4 +1,3 @@
-import { ArrowRight } from 'lucide-react';
 import { BsArrowDownSquare } from "react-icons/bs";
 import { FaCheckCircle } from "react-icons/fa";
 function Hero() {
@@ -48,6 +47,8 @@ function Hero() {
           </div>
         </div>
       </main>
+      
+
 
       {/* Chat Button */}
       {/* <div className="fixed bottom-6 right-6">

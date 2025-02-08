@@ -1,11 +1,12 @@
 import React from "react";
+import Service from "./Service";
 
 function AboutUs() {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-purple-600 via-purple-900 to-blue-800 text-white px-4 py-16 md:px-8 lg:px-16 overflow-hiddenn rounded-3xl">
       {/* Decorative Elements */}
-      <div className="absolute top-10 right-10 w-32 h-32 bg-purple-500/20 rounded-full blur-xl"></div>
-      <div className="absolute bottom-20 left-10 w-24 h-24 bg-yellow-400 rounded-full blur-lg opacity-60"></div>
+      {/* <div className="absolute top-10 right-10 w-32 h-32 bg-purple-500/20 rounded-full blur-xl"></div>
+      <div className="absolute bottom-20 left-10 w-24 h-24 bg-yellow-400 rounded-full blur-lg opacity-60"></div> */}
 
       <div className="max-w-7xl mx-auto relative">
         <h2 className="text-4xl md:text-5xl font-[10] mb-12 text-center">
@@ -130,6 +131,7 @@ function AboutUs() {
           </div>
         </div>
       </div>
+      <Service/>
     </section>
   );
 }
