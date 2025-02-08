@@ -1,5 +1,6 @@
 import React from "react";
 import { Check } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 const PricingComponent = () => {
   return (
@@ -103,7 +104,7 @@ const PricingComponent = () => {
           </button>
         </div>
       </div>
-            {/* //clients */}
+      {/* //clients */}
       <div className=" flex flex-col items-center">
         <div className="text-5xl text-white  mt-20 font-[50] py-4 ">
           Clients
@@ -122,12 +123,79 @@ const PricingComponent = () => {
 
       {/* contact */}
       <div className=" flex flex-col items-center">
-        <div className="text-5xl text-white  mt-20 font-[50] py-4 ">
-          Lets talk
+        <div className="max-w-6xl mx-auto">
+          <h1 className="text-5xl text-white text-center font-light mb-16">
+            Lets talk
+          </h1>
+
+          <div className="flex flex-col lg:flex-row justify-between gap-16">
+            {/* Form Section */}
+            <div className="w-full lg:w-1/2 max-w-md mx-auto lg:mx-0">
+              <form className="space-y-4">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full px-4 py-3 rounded-full bg-white text-gray-800 placeholder-gray-500 focus:outline-none"
+                />
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className="w-full px-4 py-3 rounded-full bg-white text-gray-800 placeholder-gray-500 focus:outline-none"
+                />
+                <input
+                  type="tel"
+                  placeholder="Phone number"
+                  className="w-full px-4 py-3 rounded-full bg-white text-gray-800 placeholder-gray-500 focus:outline-none"
+                />
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  className="w-full px-4 py-3 rounded-full bg-white text-gray-800 placeholder-gray-500 focus:outline-none"
+                />
+                <button
+                  type="submit"
+                  className="w-full py-3 rounded-full bg-purple-600 text-white font-medium hover:bg-purple-700 transition-colors"
+                >
+                  Book a call
+                </button>
+              </form>
+            </div>
+
+            {/* Content Section */}
+            <div className="w-full lg:w-1/2 max-w-md mx-auto lg:mx-0 text-white">
+              <div className="mb-12">
+                <h2 className="text-4xl font-bold mb-8">agenxi</h2>
+                <p className="text-lg mb-8">
+                  Let's discuss your goals and explore how Pixelize can help
+                  transform your brand with our innovative digital solutions.
+                </p>
+                <div className="h-px bg-white/20 w-full"></div>
+              </div>
+
+              {/* Contact Information */}
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <Mail className="w-6 h-6" />
+                  <a
+                    href="mailto:info@aigenxi.com"
+                    className="text-lg hover:underline"
+                  >
+                    info@aigenxi.com
+                  </a>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Phone className="w-6 h-6" />
+                  <a
+                    href="tel:+44452111222"
+                    className="text-lg hover:underline"
+                  >
+                    +44 452 111 222
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        
-        
-        
       </div>
     </div>
   );
