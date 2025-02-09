@@ -2,6 +2,18 @@ import React from "react";
 import { Check } from "lucide-react";
 import { Mail, Phone } from "lucide-react";
 
+
+
+import amazon from "../assets/Amazon_logo 4.png";
+import nokia from "../assets/Group.png";
+import thermo from "../assets/image 1.png";
+import iqvia from "../assets/g58.png";
+import qiagen from "../assets/g42472.png";
+import bostom from "../assets/BSC_wtag_KOwhite_rgb 1 1.png"
+import water from "../assets/viacam 1.png"
+import frc from "../assets/image 2.png"
+
+
 const PricingComponent = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-600 to-purple-900 p-4 sm:p-6 lg:px-[5rem]">
@@ -124,28 +136,28 @@ const PricingComponent = () => {
           eius libero.
         </div>
         <div className="flex flex-wrap gap-4 sm:gap-6 justify-center p-4 sm:p-10">
-  {[
-    "src/assets/Amazon_logo 4.png",
-    "src/assets/Group.png",
-    "src/assets/image 1.png",
-    "src/assets/g58.png",
-    "src/assets/g42472.png", // Ensure this image is resized properly
-    "src/assets/BSC_wtag_KOwhite_rgb 1 1.png",
-    "src/assets/viacam 1.png",
-    "src/assets/image 2.png",
-  ].map((logo, index) => (
-    <div
-      key={index}
-      className="bg-white rounded-xl flex justify-center items-center w-40 h-20 sm:w-72 sm:h-36 p-4 sm:p-12"
-    >
-      <img
-        src={logo}
-        alt={`client-${index}`}
-        className="w-full h-auto max-w-full max-h-full object-contain"
-      />
-    </div>
-  ))}
-</div>
+          {[
+            amazon,
+            nokia,
+            thermo,
+            iqvia,
+            qiagen, // Ensure this image is resized properly
+            bostom,
+            water,
+            frc,
+          ].map((logo, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-xl flex justify-center items-center w-40 h-20 sm:w-72 sm:h-36 p-4 sm:p-12"
+            >
+              <img
+                src={logo}
+                alt={`client-${index}`}
+                className="w-full h-auto max-w-full max-h-full object-contain"
+              />
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Contact Section */}
@@ -191,7 +203,9 @@ const PricingComponent = () => {
             {/* Content Section */}
             <div className="w-full lg:w-1/2 max-w-md mx-auto lg:mx-0 text-white">
               <div className="mb-8 sm:mb-12">
-                <h2 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8">agenxi</h2>
+                <h2 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8">
+                  agenxi
+                </h2>
                 <p className="text-sm sm:text-base md:text-lg mb-6 sm:mb-8">
                   Let's discuss your goals and explore how Pixelize can help
                   transform your brand with our innovative digital solutions.
