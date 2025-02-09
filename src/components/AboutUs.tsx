@@ -98,8 +98,8 @@ function AboutUs() {
 
           {/* AI Section */}
           <div className="mt-16 text-center">
-            <h3 className="text-3xl md:text-5xl font-thin mb-6 flex items-center justify-center gap-2">
-              <span className="bg-purple-300"></span>
+            <h3 className=" text-white text-3xl md:text-5xl font-thin mb-6 flex items-center justify-center gap-2">
+              <span className="bg-purple-300 "></span>
               <PiStarFourFill />
               Accelerated by AI
               <span className="bg-purple-300"></span>
@@ -113,7 +113,7 @@ function AboutUs() {
             </p>
 
             {/* Services Grid */}
-            <div className="flex flex-wrap justify-center gap-3">
+            <div className="flex flex-wrap justify-center gap-3 text-white">
               {[
                 "Script Writing",
                 "Workflows",

@@ -5,7 +5,7 @@ import UiUxDesign from "./subcomponents/serviceCard2";
 const Service = () => {
   return (
     <div>
-      <div className="text-5xl text-center my-28 font-[50]">Services</div>
+      <div className="text-5xl text-center my-28 font-[50] text-white">Services</div>
       <div>
         <AnimationServices
           Sno="1"
