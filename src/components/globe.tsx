@@ -83,7 +83,7 @@ const data = [
 
 export default function Home() {
   return (
-    <div className="h-[100vh] md:h-[120vh] bg-gradient-to-br from-purple-600 via-purple-900 to-blue-800 flex flex-col items-center relative overflow-hidden">
+    <div className="h-[100vh] md:h-[120vh]  flex flex-col items-center relative overflow-hidden">
       {/* Text Content */}
       <div className="px-4">
         <div className="text-4xl md:text-5xl text-white text-center mt-10 md:my-10 font-[50]">
@@ -98,11 +98,11 @@ export default function Home() {
       </div>
 
       {/* Country Buttons */}
-      <div className="text-white flex flex-wrap justify-center gap-2 md:gap-4 px-2">
+      <div className="text-white flex flex-wrap justify-center gap-2 md:gap-4 ">
         {["United Kingdom", "Europe", "South Africa"].map((service, index) => (
           <div
             key={index}
-            className="bg-white/10 backdrop-blur px-4 py-1 md:px-6 md:py-2 rounded-full text-xs md:text-sm hover:bg-white/20 transition-colors cursor-pointer"
+            className="bg-white/10 backdrop-blur py-1 md:px-6 md:py-2 rounded-full text-xs md:text-sm hover:bg-white/20 transition-colors cursor-pointer"
           >
             {service}
           </div>

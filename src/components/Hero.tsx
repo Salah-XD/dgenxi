@@ -7,7 +7,7 @@ function Hero() {
       
 
       {/* Hero Section */}
-      <main className="px-4 pt-[12rem] md:py-24 lg:py-32 md:px-8 lg:px-16">
+      <main className="px-4 pt-[12rem] md:py-24 lg:py-32 md:px-8 lg:px-16 h-[120vh]">
         <div className="max-w-7xl mx-auto ">
           <div className="text-center space-y-8 ">
             <h2 style={{lineHeight:'1.5'}} className="text-[#2O1A1D] text-5xl md:text-6xl ">

@@ -16,7 +16,7 @@ import frc from "../assets/image 2.png"
 
 const PricingComponent = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-600 to-purple-900 p-4 sm:p-6 lg:px-[5rem]">
+    <div className="min-h-screen  p-4 sm:p-6 lg:px-[5rem]">
       {/* Easy Subscription Model Section */}
       <div className="text-3xl sm:text-4xl md:text-5xl text-white text-center my-10 sm:my-20 font-bold py-4">
         Easy Subscription Model
