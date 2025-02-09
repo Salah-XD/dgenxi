@@ -29,7 +29,7 @@ function App() {
 
       {/* AboutUs Overlay Effect */}
       <div
-        className={`fixed top-0 left-0 w-full h-screen transition-transform duration-500 ${
+        className={`fixed top-0 left-0 w-full h-screen transition-transform duration-700 ${
           aboutUsVisible ? "translate-y-0" : "translate-y-full"
         }`}
         style={{ zIndex: 50 }}
