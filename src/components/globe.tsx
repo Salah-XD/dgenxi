@@ -83,27 +83,34 @@ const data = [
 
 export default function Home() {
   return (
-    <div className=" h-[120vh] bg-gradient-to-br from-purple-600 via-purple-900 to-blue-800 flex flex-col items-center relative overflow-hidden">
-      <div className="text-5xl text-white text-center my-10 font-[50]">
-        Our Global Reach
+    <div className="h-[100vh] md:h-[120vh] bg-gradient-to-br from-purple-600 via-purple-900 to-blue-800 flex flex-col items-center relative overflow-hidden">
+      {/* Text Content */}
+      <div className="px-4">
+        <div className="text-4xl md:text-5xl text-white text-center mt-10 md:my-10 font-[50]">
+          Our Global Reach
+        </div>
+        <div className="text-lg md:text-xl w-full md:w-[800px] text-white text-center mb-8 md:my-10 px-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          labore eaque ea sequi ipsam autem voluptatum saepe laborum accusantium
+          unde odio praesentium, nihil doloribus optio voluptatem, tenetur quod,
+          eius libero.
+        </div>
       </div>
-      <div className="text-xl w-[800px] text-white text-center my-10 ">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-        labore eaque ea sequi ipsam autem voluptatum saepe laborum accusantium
-        unde odio praesentium, nihil doloribus optio voluptatem, tenetur quod,
-        eius libero.
-      </div>
-      <div className=" text-white flex flex-wrap justify-center gap-4">
+
+      {/* Country Buttons */}
+      <div className="text-white flex flex-wrap justify-center gap-2 md:gap-4 px-2">
         {["United Kingdom", "Europe", "South Africa"].map((service, index) => (
           <div
             key={index}
-            className="bg-white/10 backdrop-blur px-6 py-2 rounded-full text-sm hover:bg-white/20 transition-colors cursor-pointer"
+            className="bg-white/10 backdrop-blur px-4 py-1 md:px-6 md:py-2 rounded-full text-xs md:text-sm hover:bg-white/20 transition-colors cursor-pointer"
           >
             {service}
           </div>
         ))}
       </div>
-      <div className=" absolute w-[200%] top-[9rem] h-[200%] ">
+
+      {/* World Component Container */}
+      <div className="absolute w-[100%] md:w-[200%] top-96 md:top-36 h-[100%] md:h-[200%]">
         <World globeConfig={globeConfig} data={data} />
       </div>
     </div>
